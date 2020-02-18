@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<style type="text/css">
+		.card-img-top {
+			width: 100%;
+			height: 15vh;
+			object-fit: cover;
+		}
+	</style>
+	<!-- <link rel="stylesheet" href="./style.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		function onImage()
+		{
+			document.getElementById("bigPhoto").src = "./img/ski2.jpg"
+		}
+
+		function offImage()
+		{
+			document.getElementById("bigPhoto").src = "./img/ski1.jpg"
+		}
+	</script>
+	<title>About Me</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-dark">
+		<a class="btn btn-outline-secondary" style="color: white;" href="#">Home</a>
+	</nav>
+
+	<br><h1 class="container">
+		<b>Jones, Ryan - <small style="color:gray;"><b>Software Development Methods and Tools</b></small></b>
+	</h1>
+
+	<div class="container">
+		<div class="card">
+			<div class="card-body" style="background-color: rgba(245,245,245);">
+				I live in Colorado, am an Aerospace Engineering major, and like to ski. I'm studying Computer Science as my minor because it's interesting and applicable pretty much anywhere.
+			</div>
+		</div>
+
+		<hr>
+		<div align="right">
+			<p>View this page without bootstrap <a href="./mypage.html">here</a>.</p>
+		</div>
+
+		<h2>My Professional Profile</h2>
+		<br>
+
+		<div style="width: 500px;">
+			<a class="btn btn-outline-secondary btn-block" href="https://github.com/rjones2598/" role="button">
+				<img src="./img/git.png" alt="Github Profile ->" width="20%">
+			</a>
+		</div>
+
+		<br>
+
+		<img id="bigPhoto" onmouseover="onImage()" onmouseout="offImage()" src="./img/ski1.jpg" alt="My Picture" style="width: 500px; height: 500px; border-radius: 50%">
+
+		<br><br><hr>
+
+		<h3>My Favorite Projects</h3>
+
+		<table class="table table-bordered">
+			<thead class="thead-light">
+				<tr>
+					<th scope="col">#</th><th scope="col" align="center">Project</th><th scope="col" align="center">Technology</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<th scope="row">1</th><td>&nbsp</td><td>&nbsp</td>
+				</tr>
+
+				<tr>
+					<th scope="row">2</th><td>&nbsp</td><td>&nbsp</td>
+				</tr>
+
+				<tr>
+					<th scope="row">3</th><td>&nbsp</td><td>&nbsp</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<br><br>
+
+		<div class="d-flex justify-content-between">
+			<div class="p-2">
+				<h3>Interests</h3><br>
+			</div>
+			<div class="p-2">
+				<a class="btn btn-primary btn-sm" href="./form.html">Add Interest</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col">
+				<div class="card">
+					<img class="card-img-top" src="./img/Bike.jpeg" alt="Card 1 Image">
+					<div class="card-body">
+						<h5 class="card-title">&nbsp<b>Biking</b></h5>
+						<p class="card-text">
+							Some reason here							
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img class="card-img-top" src="./img/Tech.webp" alt="Card 2 Image">
+					<div class="card-body">
+						<h5 class="card-title">&nbsp<b>Technology</b></h5>
+						<p class="card-text">
+							Some reason here							
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<img class="card-img-top" src="./img/Games.jpg" alt="Card 3 Image">
+					<div class="card-body">
+						<h5 class="card-title">&nbsp<b>Video&nbspGames</b></h5>
+						<p class="card-text">
+							Some reason here							
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+		</div>
+	</div><br><br><br><br>
+</body>
+</html>
